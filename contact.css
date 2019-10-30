@@ -1,0 +1,208 @@
+
+
+* {box-sizing: border-box;}
+.contact {
+    margin-left: 250px;
+}
+
+main {
+        background-image: url("../img/contact.jpg");
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;  
+  margin-bottom: 16px;
+  resize: vertical;
+  opacity: 0.5;
+}
+
+textarea,#fname,#Email {
+    color: black !important	; 
+}
+
+input[type=submit] {
+    background-color: rgb(77, 77, 143);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 70px;
+}
+
+input[type=submit]:hover {
+  background-color: #737973;
+}
+
+.container {
+  border-radius: 5px;
+  box-shadow: 0 5px 35px rgba(0,0,0,.65);
+  padding: 20px;
+  height: 400px;
+  width: 50%;
+}
+
+#fname {
+    width: 30%;
+    margin-right: 5px;
+}
+
+#white{
+    color: white;
+}
+
+#Email{
+    width: 40%;
+    margin-right: 5px;
+}
+
+#subject {
+    margin-top: 15px;
+    
+}
+
+.submit {
+    float: right;
+    
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1918px) {
+    .container {
+        height: 450px;
+    }
+    input[type=submit] {
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (max-width: 788px) {
+    .container {
+        height: 520px;
+    } 
+    #fname {
+        width: 100%;
+    }
+    input[type=submit] {
+        margin-top: 20px;
+    }
+
+    #Email {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    #fname {
+        width: 100%;
+    }
+    #Email {
+        width: 100%;
+    }
+    .container {
+        height: 540px;
+    } 
+}
+
+@media screen and (max-width: 1152px) {
+    #fname {
+        width: 100%;
+    }
+    #Email {
+        width: 100%;
+    }
+    .container {
+        height: 540px;
+        width: 500px;
+    } 
+    .contact {
+        margin-left: 10px;
+    }
+    main {
+       
+        background-repeat: no-repeat;
+        
+      
+    }
+
+@media screen and (max-width: 800px) {
+    #fname {
+        width: 100%;
+    }
+    #Email {
+        width: 100%;
+    }
+    .container {
+        height: 540px;
+        width: 300px;
+    } 
+    .contact {
+        margin-left: 50px;
+    }
+
+}
+
+
+}
+
+@media screen and (max-width: 590px) {
+    #fname {
+        width: 70%;
+    }
+    #Email {
+        width: 70%;
+    }
+    .container {
+        height: 500px;
+        width: 400px;
+    } 
+    .contact {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #fname {
+        width: 64%;
+    }
+    #Email {
+        width: 80%;
+    }
+    .container {
+        height: 500px;
+        width: 300px;
+    } 
+    .contact {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #fname {
+        width: 64%;
+    }
+    #Email {
+        width: 80%;
+    }
+    .container {
+        height: 500px;
+        width: 300px;
+    } 
+    .contact {
+        margin-left: 10px;
+    }
+    main {
+        background-image: url("../img/iphoneX.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: bottom; 
+    }
+}

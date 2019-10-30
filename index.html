@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/up.css">
+    <title>My Music Utopia</title>
+    <style>
+         #toggleMenu:checked ~ main {
+            margin-left: 10em;
+        }
+        nav {
+            position: fixed;
+
+        }
+        .toggleLabel::after {
+            content:'\2630';
+            cursor: pointer;
+            color: white;
+        }
+        #toggleMenu:checked ~ main .toggleLabel::after {
+            content: '\2715';
+            cursor: pointer;
+            color: white;
+        }
+        main {
+            position: absolute;
+            margin-left: 0;
+            transition: margin-left .6s cubic-bezier(.17,.67,.83,.136);
+        }
+        body {
+            overflow-x: hidden;
+        }
+
+       
+    </style>
+</head>
+<body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+        <input type="checkbox"  id="toggleMenu">
+        <nav>
+            <h4>Menu</h4>
+            <ul>
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="pages/information.html">Info</a>
+                </li>
+                <li>
+                    <a href="pages/artiesten.html">Artiesten</a>
+                </li>
+                <li>
+                        <a href="pages/album.html">Album</a>
+                    </li>
+                    
+                        <li>
+                                <a href="pages/Evenementen.html">Evenementen</a>
+                            </li>
+                            <li>
+                                    <a href="pages/Contact.html">Contact</a>
+                                </li>
+            </ul>
+        </nav>
+    <main> <label class="toggleLabel" for="toggleMenu"></label>
+        <div class="carousel-container">
+            <i class="fas fa-arrow-right" id="nextBtn"></i>
+            <i class="fas fa-arrow-left " id="prevBtn"></i>
+        <div class="carousel-slide">
+            <img src="img/test/test3.jpg" id="lastClone" alt="">
+            <img src="img/a1.jpg" alt="" srcset="">
+            <img src="img/test/test2.png" alt="" srcset="">
+            <img src="img/a.jpg" alt="" srcset="">
+            <img src="img/test/m.jpg" alt="" srcset="">
+            <img src="img/b1.jpg" alt="" srcset="">
+            <img src="img/a1.jpg" id="firstClone" alt="">
+        </div>
+    </div>
+    <br>
+    <h2>Welkom</h2><bR>
+    <p>Welkom op mijn Utopia. Als je dit leest dan heb je officieel je ticket gehaald om door mijn little Utopia te kijken.<br>
+            In mijn Utopia zal je misschien bekende misschien onbekende artiesten tegen komen. Ook zul je mijn favorieten albums zien. Wat er verder op jou te wachten staat<br>
+            mag je lekker zelf uit zoeken. <br>
+            There you go. </p>
+    <div class="homeImg-container">
+        <img src="img/highend.jpeg" class="homeImg" align="left" alt="" srcset="">
+        <img src="img/2.png" class="homeImg" alt="" srcset="">
+        <img src="img/3.jpg" class="homeImg" align="right" alt="" srcset="">
+    </div>
+    <div class="spotifyHome">
+            <iframe src="https://open.spotify.com/embed/album/4pQRdAYAsNDD0nYWzrKwMk" class="SP"  width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed/album/7fCZc7ZVM0IafcF3xFt3d9"  class="SP" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed/album/5WxbWFIGeqnc0QkKQz3OH5"class="SP"  width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    </main>
+<script src="js/slide.js"></script>
+<script src="js/up.js"></script>
+
+</body>
+</html>
